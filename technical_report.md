@@ -5,7 +5,7 @@
 
 ## Problem & Data
 - Depot: Hospital at (29.995127, 31.684628)
-- Patients: 5 GPS points (see notebooks).
+- Patients: 5 GPS points (see solution).
 - Constraints: 1 vehicle, ≤3 pickups per trip, multiple trips allowed.
 
 ## Classical Baseline
@@ -29,18 +29,10 @@ We solve with **QAOA** (simulator). The notebook includes an **optional section*
 ## Comparative Notes
 - **Classical**: exact for this scale; scales factorially with patients per trip and combinatorially with grouping.
 - **Quantum (QAOA/QUBO)**: offers a unified formulation; practical performance depends on problem size, penalty tuning, and noise.
-- Small-scale runs are sensitive to **penalty calibration** and sampler noise; hardware results may require **error mitigation** (readout mitigation, ZNE) and **warm starts**.
-
+- Small-scale runs are sensitive to **penalty calibration** and sampler noise.
+- 
 ## Tools & Platforms
 - Python 3, NumPy, Pandas, Jupyter
-- **Qiskit** and **Qiskit Optimization** (QAOA)
-- (Optional) IBM Quantum access via `qiskit-ibm-runtime`
-
-## Future Work
-- Add **time windows** / **priorities** (e.g., stage high-priority patients in earlier trips).
-- Add **service times** and **multiple ambulances**.
-- Use **penalty annealing**, **warm starts** from classical heuristics, or **Lagrangian** tuning.
-- Explore **pruning** and **beam search** on the classical side to scale up.
-- Benchmark **runtime vs. solution quality** across simulators and hardware with **error mitigation**.
+- Qiskit 
 
 *See the notebooks for full details and executable code.*
