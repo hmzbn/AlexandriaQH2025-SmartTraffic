@@ -21,4 +21,4 @@ We implemented and compared:
 - `solution.ipynb` – Single notebook implementing **both classical and quantum solutions**.  
 - [`OptimizationProblemData.json`](https://drive.google.com/file/d/1XVoEXkX3xfltEsoP1O_Oyi6IdpDJe_ez/view) – Dataset with hospital and patient GPS coordinates.  
 - `technical_report.pdf` – Detailed report covering methodology, results, and analysis.  
-- [Presentation Link]() 
+- [Presentation Link](https://docs.google.com/presentation/d/1i8JpjnhptMGrnv3cLEI1qVmGLmvIy2n7/edit?usp=sharing&ouid=101447552729063326795&rtpof=true&sd=true) 
