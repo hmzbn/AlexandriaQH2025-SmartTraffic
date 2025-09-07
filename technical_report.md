@@ -24,15 +24,14 @@ We encode a small multi-trip VRP as a **QUBO** with binary variables `x[i,t,p]` 
 - **Objective** sums GPS distances for: depot→first, between consecutive positions, last→depot.
 - With 5 patients, K=3, T=2 trips → 30 binary variables.
 
-We solve with **QAOA** (simulator). The notebook includes an **optional section** to run on IBM Quantum hardware.
+We solve with **QAOA** (simulator).
 
 ## Comparative Notes
 - **Classical**: exact for this scale; scales factorially with patients per trip and combinatorially with grouping.
-- **Quantum (QAOA/QUBO)**: offers a unified formulation; practical performance depends on problem size, penalty tuning, and noise.
-- Small-scale runs are sensitive to **penalty calibration** and sampler noise.
-- 
+- **Quantum (QAOA/QUBO)**: offers a unified formulation; practical performance depends on problem size, penalty tuning, and filtered out the invalid bitstrings.
+
 ## Tools & Platforms
-- Python 3, NumPy, Pandas, Jupyter
+- Python 3, NumPy, Jupyter
 - Qiskit 
 
-*See the notebooks for full details and executable code.*
+*See the notebooks (solution.ipynb) for full details and executable code.*
