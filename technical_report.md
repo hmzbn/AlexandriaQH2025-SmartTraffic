@@ -34,4 +34,4 @@ We solve with **QAOA** (simulator).
 - Python 3, NumPy, Jupyter
 - Qiskit 
 
-*See the notebooks (solution.ipynb) for full details and executable code.*
+*See the notebooks (solution.ipynb and quantum_solution.ipynb) for full details and executable code.*
